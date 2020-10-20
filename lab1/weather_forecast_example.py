@@ -50,9 +50,7 @@ def main():
 
         def reset_iterator(self):
             self._current_city = 0
-            c = self._cities[self._current_city]
-            self.increment_iterator()
-            return c
+            return self.next_city()
 
     city_selector = CitySelector()
 
