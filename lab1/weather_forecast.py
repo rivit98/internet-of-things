@@ -26,8 +26,10 @@ def main():
     from gpiozero import AngularServo, Button
     import pyowm
 
+    OWN_API_KEY = ""  # your key
+
     servo1 = AngularServo(17, min_angle=-90, max_angle=90)
-    owm = pyowm.OWM('4526d487f12ef78b82b7a7d113faea64')
+    owm = pyowm.OWM(OWN_API_KEY)
     weather_manager = owm.weather_manager()
     button1 = Button(11)
     button2 = Button(12)
