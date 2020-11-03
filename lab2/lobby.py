@@ -18,7 +18,7 @@ def main():
     button1 = Button(11)
     button1.when_pressed = lambda _: led1.change()
 
-    button2 = Button(12)  # living_room lamp
+    button2 = Button(12)
     button2.when_pressed = lambda _: shutter.shut_down()
 
     while True:
